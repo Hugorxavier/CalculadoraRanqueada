@@ -1,0 +1,36 @@
+import { log } from './logger'
+
+log('Import works!')
+
+//Hugo Rodrigues Xavier
+
+//Criando a Função 
+
+function SaldoVitorias(NumVit,NumDer){
+let Resultado = NumVit - NumDer
+return Resultado 
+ }
+
+// Criando as Variáveis 
+ let Saldo = SaldoVitorias(100,60) //Variável que chama a Função 
+ let NivelHeroi 
+ 
+ //Estrutura de Decisão
+ if (Saldo < 10) {
+   NivelHeroi = "Ferro"
+ } else if (Saldo >= 11 && Saldo <= 20) {
+   NivelHeroi = "Bronze"
+ } if (Saldo >= 21 && Saldo <= 50) {
+   NivelHeroi = "Prata"
+ } else if (Saldo >= 51 && Saldo <= 80) {
+   NivelHeroi = "Ouro"
+ } if (Saldo >= 81 && Saldo <= 90) {
+   NivelHeroi = "Diamante"
+ } else if (Saldo >= 91 && Saldo <= 100) {
+   NivelHeroi = "Lendário"
+ } if (Saldo > 101) {
+   NivelHeroi = "Imortal"
+ }
+ 
+ 
+ console.log(`O Heroi tem o Saldo de ${Saldo} e está no Nivel de ${NivelHeroi}`)
